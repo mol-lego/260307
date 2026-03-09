@@ -1,825 +1,359 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-heading-ja: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  --font-body-ja: ryo-gothic-plusn, sans-serif;
+  --font-en: source-sans-pro, sans-serif;
+
+  --color-bg: #fff;
+  --color-text: #333;
+  --color-title: #333;
+  --color-overlay-bg: #333;
+  --color-label-cyan: #ccffff;
+  --color-label-pink: #ffcccc;
+  --color-footer-bg: #ebebeb;
+
+  --container-max: 1068px;
+  --content-width: 80%;
+  --content-left: 10%;
+  --media-width: 90%;
+  --card-width: 70%;
+
+  --space-hero-top: 150px;
+  --space-hero-sub: 0px;
+  --space-sm: 30px;
+  --space-md: 60px;
+  --space-lg: 70px;
+  --hero-shift-y: 30px;
+  --hero-image-top: var(--space-hero-top);
+  --hero-title-line: 1;	
+
+
+  --h1-size: 90px;
+  --hero-sub-size: 15px;
+  --lead-size: 18px;
+  --section-title-size: 18px;
+  --body-size: 16px;
+
+  --radius-md: 10px;
+  --shadow-card: rgba(50, 50, 93, 0.5) 2px 2px 5px 0;
+  --shadow-card-hover: rgba(50, 50, 93, 0.8) 2px 2px 10px 0;
 }
 body {
- overflow-x: hidden;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
-@media screen and (min-width:0px){
-	#wrap {
-		position: relative;
-		width: 100%;
-		background-color: rgba(255,255,255,1);
-		overflow: visible;
-		margin-left: 0;
-		margin-right: 0;
-		padding-left: 0;
-		padding-right: 0;
-		min-width: 320px;
-	}
-	.Pic1{
-		width: 91.428571%;
-		overflow: visible;
-		margin-left: auto;
-		margin-right: 0;
-		margin-top: 100px;
-	}
-	#Pic1 {
-		position: relative;
-		width: 100%;
-		right: 0;
-		overflow: visible;
-	}
-	#Introduction {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		white-space: normal;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 18px;
-		color: rgba(51,51,51,1);
-		margin-top: 60px;
-		margin-left: 10%;
-	}
-	.Pic2{
-		width: 91.428571%;
-		overflow: visible;
-		margin-left: 0;
-		margin-top: 60px;
-	}
-	#Pic2 {
-		position: relative;
-		width: 100%;
-		right: 0;
-		overflow: visible;
-	}
-	#AR_t {
-		position: relative;
-		overflow: visible;
-		width: 185px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 18px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 60px;
-	}
-	#AR_body {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		text-align: left;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 16px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 30px;
-	}
-	#AR_pic_wrap {
-		position: relative;
-		width: 80px;
-		height: 80px;
-		overflow: visible;
-		margin-top: 10px;
-		margin-left: 7%;
-	}
-	#AR_pic {
-		width: 100%;
-		height: 100%;
-		display: block;
-	}
-	#Works_t {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 18px;
-		color: rgba(51,51,51,1);
-		margin-top: 70px;
-		margin-left: 10%;
-	}
-	.ToMSQEw{
-		position: relative;
-		width: 70%;
-		margin-top: 30px;
-		margin-left: 10%;
-		box-shadow: rgba(50, 50, 93, 0.5) 2px 2px 5px 0px;
-		border-radius: 10px 10px 10px 10px;
-		transition: box-shadow 0.2s ease;
-	}
-	.ToMSQEw:hover {
-		box-shadow: rgba(50, 50, 93, 0.8) 2px 2px 10px 0px;
-	}
-	.link {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height:100%;
-		width: 100%;
-		z-index: 2;
-	}
-	#ToMSQE_pic {
-		position: relative;
-		width: 100%;
-		margin-bottom: 0;
-		vertical-align: top;
-		border-radius: 10px 10px 10px 10px;
-	}
-	.Rect{
-		position: absolute;
-		top: 0;
-		width: 100%;
-	}
-	#ToMSQE_U {
-		fill: rgba(51,51,51,1);
-		
-	}
-	.ToMSQE_U {
-		position: absolute;
-		overflow: visible;
-		margin-left: 0;
-		width: 100%;
-		height: 30px;
-		border-radius: 10px 10px 0px 0px;
-	}
-	#ToMSQE {
-		position: absolute;
-		margin-top: 2.5px;
-		margin-left: 8px;
-		width: 63px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
-		color: rgba(204,255,255,1);
-		border-radius: 10px 10px 10px 10px;
-	}
-	.ToYasakaw{
-		position: relative;
-		width: 70%;
-		height: auto;
-		margin-left: 20%;
-		margin-top: 30px;
-		box-shadow: rgba(50, 50, 93, 0.5) 2px 2px 5px 0px;
-		border-radius: 10px 10px 10px 10px;
-		transition: box-shadow 0.2s ease;
-	}
-	.ToYasakaw:hover {
-		box-shadow: rgba(50, 50, 93, 0.8) 2px 2px 10px 0px;
-	}
-	#ToYasaka_pic {
-		position: relative;
-		width: 100%;
-		overflow: visible;
-		vertical-align: top;
-		border-radius: 10px 10px 10px 10px;
-	}
-	#ToYasaka_U {
-		fill: rgba(51,51,51,1);
-	}
-	.ToYasaka_U {
-		position: absolute;
-		overflow: visible;
-		width: 100%;
-		height: 30px;
-		border-radius: 10px 10px 0px 0px;
-	}
-	#ToYasaka {
-		position: absolute;
-		margin-top: 2.5px;
-		margin-left: 8px;
-		overflow: visible;
-		width: 63px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
-		color: rgba(255,204,204,1);
-	}
-	#title {
-		position: absolute;
-		overflow: visible;
-		width: 318px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: source-sans-pro, sans-serif;
-		font-weight: 600;
-		font-style: normal;
-		font-size: 90px;
-		color: rgba(51,51,51,1);
-		margin-left: 9.5%;
-		top: -75px;
-		left: -12px;
-		z-index: 3;
-	}
-	#title_sub {
-		right: 10%;
-		position: absolute;
-		overflow: visible;
-		width: 153px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: source-sans-pro, sans-serif;
-		font-weight: 600;
-		font-style: normal;
-		font-size: 15px;
-		color: rgba(51,51,51,1);
-		top: 25px;
-		z-index: 3;
-	}
-	#footer_b {
-		fill: rgb(235, 235, 235);
-	}
-	.footer_b {
-		position: absolute;
-		overflow: visible;
-		text-align: center;
-		width: 100%;
-		height: 100%;
-	}
-	#Copyright {
-		position: relative;
-		text-align: center;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 14px;
-		color: rgba(51,51,51,1);
-		margin: auto;
-		top: 60px;
-	}
-	#lego {
-		position: relative;
-		text-align: right;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 6px;
-		color: rgba(51,51,51,1);
-		margin-right: 10px;
-		top: 100px;
-	}
-	#footer{
-		position: relative;
-		width: 100vw;
-		height: 150px;
-		margin-top: 100px;
-		margin-left: 0;
-		margin-right: 0;
-		padding-left: 0;
-		padding-right: 0;
-	}
-}
-@media screen and (min-width:735px){
-	#wrap {
-		position: relative;
-		width: 100%;
-		background-color: rgba(255,255,255,1);
-		margin: auto;
-		overflow: visible;
-	}
-	.Pic1{
-		width: 90%;
-		overflow: visible;
-		margin-left: auto;
-		margin-right: 0;
-		margin-top: 130px;
-	}
-	#Pic1 {
-		position: relative;
-		width: 100%;
-		right: 0;
-		overflow: visible;
-	}
-	#Introduction {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 30px;
-		color: rgba(51,51,51,1);
-		margin-top: 120px;
-		margin-left: 10%;
-	}
-	.Pic2{
-		width: 90%;
-		overflow: visible;
-		margin-left: 0;
-		margin-top: 120px;
-	}
-	#Pic2 {
-		position: relative;
-		width: 100%;
-		right: 0;
-		overflow: visible;
-	}
-	#AR_t {
-		position: relative;
-		overflow: visible;
-		width: 485px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 80px;
-	}
-	#AR_body {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		text-align: left;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 20px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 30px;
-	}
-	#AR_pic_wrap {
-		position: relative;
-		width: 300px;
-		height: 300px;
-		margin-top: 28px;
-		margin-left: 5.5%;
-		overflow: visible;
-	}
-	#AR_pic {
-		width: 100%;
-		height: 100%;
-		display: block;
-	}
-	#Works_t {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		color: rgba(51,51,51,1);
-		margin-top: 80px;
-		margin-left: 10%;
-	}
-	.ToMSQEw{
-		position: relative;
-		width: 70%;
-		margin-top: 40px;
-		margin-left: 10%;
-		box-shadow: rgba(50, 50, 93, 0.5) 2px 2px 10px 0px;
-		border-radius: 10px 10px 10px 10px;
-		transition: box-shadow 0.2s ease;
-	}
-	.ToMSQEw:hover {
-		box-shadow: rgba(50, 50, 93, 0.8) 2px 2px 12px 0px;
-	}
-	.link {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height:100%;
-		width: 100%;
-		z-index: 2;
-	}
-	#ToMSQE_pic {
-		position: relative;
-		width: 100%;
-		margin-bottom: 0;
-		vertical-align: top;
-	}
-	.Rect{
-		position: absolute;
-		top: 0;
-		width: 100%;
-	}
-	#ToMSQE_U {
-		fill: rgba(51,51,51,1);
-	}
-	.ToMSQE_U {
-		position: absolute;
-		overflow: visible;
-		margin-left: 0;
-		width: 60%;
-		height: 40px;
-		border-radius: 10px 0px 10px 0px;
-	}
-	#ToMSQE {
-		position: absolute;
-		margin-top: 4px;
-		margin-left: 10px;
-		width: 63px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(204,255,255,1);
-		z-index: 5;
-	}
-	.ToYasakaw{
-		position: relative;
-		width: 70%;
-		height: auto;
-		margin-left: 20%;
-		margin-top: 40px;
-		box-shadow: rgba(50, 50, 93, 0.5) 2px 2px 10px 0px;
-		border-radius: 10px 10px 10px 10px;
-		transition: box-shadow 0.2s ease;
-	}
-	.ToYasakaw:hover {
-		box-shadow: rgba(50, 50, 93, 0.8) 2px 2px 12px 0px;
-	}
-	#ToYasaka_pic {
-		position: relative;
-		width: 100%;
-		overflow: visible;
-		vertical-align: top;
-	}
-	#ToYasaka_U {
-		fill: rgba(51,51,51,1);
-	}
-	.ToYasaka_U {
-		position: absolute;
-		overflow: visible;
-		margin-left: 0;
-		width: 60%;
-		height: 40px;
-		border-radius: 10px 0px 10px 0px;
-	}
-	#ToYasaka {
-		position: absolute;
-		margin-top: 4px;
-		margin-left: 10px;
-		width: 63px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(255,204,204,1);
-		z-index: 5;
-	}
-	#footer_b {
-		fill: rgb(235, 235, 235);
-	}
-	.footer_b {
-		position: absolute;
-		overflow: visible;
-		text-align: center;
-		width: 100%;
-		height: 360px;
-	}
-	#Copyright {
-		position: relative;
-		text-align: center;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 20px;
-		color: rgba(51,51,51,1);
-		margin: auto;
-		top: 164px;
-	}
-	#lego {
-		position: relative;
-		text-align: right;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 10px;
-		color: rgba(51,51,51,1);
-		margin-right: 20px;
-		top: 280px;
 
-	}
-	#footer{
-		position: relative;
-		width: 100%;
-		height: 150px;
-		margin-top: 268px;
-	}
-	#title {
-		position: absolute;
-		overflow: visible;
-		width: 318px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: source-sans-pro, sans-serif;
-		font-weight: 600;
-		font-style: normal;
-		font-size: 160px;
-		color: rgba(51,51,51,1);
-		top: -120px;
-		left: -8px;
-		z-index: 3;
-	}
-	#title_sub {
-		right: 10%;
-		position: absolute;
-		overflow: visible;
-		width: 80%;
-		white-space: nowrap;
-		text-align: right;
-		font-family: source-sans-pro, sans-serif;
-		font-weight: 600;
-		font-style: normal;
-		font-size: 30px;
-		color: rgba(51,51,51,1);
-		top: 10px;
-		z-index: 3;
-	}
+.page {
+  min-width: 320px;
 }
-@media screen and (min-width:1069px){
-	#wrap {
-		position: relative;
-		width: 1068px;
-		background-color: rgba(255,255,255,1);
-		margin: auto;
-		overflow: visible;
-	}
-	.Pic1{
-		width: 90%;
-		overflow: visible;
-		margin-left: auto;
-		margin-right: 0;
-		margin-top: 130px;
-	}
-	#Pic1 {
-		position: relative;
-		width: 100%;
-		right: 0;
-		overflow: visible;
-	}
-	#Introduction {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 30px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 150px;
-	}
-	.Pic2{
-		width: 90%;
-		overflow: visible;
-		margin-left: 0;
-		margin-top: 150px;
-	}
-	#Pic2 {
-		position: relative;
-		width: 100%;
-		right: 0;
-		overflow: visible;
-	}
-	#AR_t {
-		position: relative;
-		overflow: visible;
-		width: 485px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 30px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 100px;
-	}
-	#AR_body {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		text-align: left;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 20px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 30px;
-	}
-	#AR_pic_wrap {
-		position: relative;
-		width: 300px;
-		height: 300px;
-		margin-top: 0px;
-		margin-left: 5%;
-		overflow: visible;
-	}
-	#AR_pic {
-		width: 100%;
-		height: 100%;
-		display: block;
-	}
-	#Works_t {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 30px;
-		color: rgba(51,51,51,1);
-		margin-top: 70px;
-		margin-left: 10%;
-	}
-	.ToMSQEw{
-		position: relative;
-		width: 70%;
-		margin-top: 50px;
-		margin-left: 10%;
-		box-shadow: rgba(50, 50, 93, 0.5) 2px 2px 10px 0px;
-		border-radius: 10px 10px 10px 10px;
-		transition: box-shadow 0.2s ease;
-	}
-	.ToMSQEw:hover {
-		box-shadow: rgba(50, 50, 93, 0.8) 3px 3px 15px 0px;
-	}
 
-	.link {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height:100%;
-		width: 100%;
-		z-index: 2;
-	}
-	#ToMSQE_pic {
-		position: relative;
-		width: 100%;
-		margin-bottom: 0;
-		vertical-align: top;
-	}
-	.Rect{
-		position: absolute;
-		top: 0;
-		width: 100%;
-	}
-	#ToMSQE_U {
-		fill: rgba(51,51,51,1);
-	}
-	.ToMSQE_U {
-		position: absolute;
-		overflow: visible;
-		margin-left: 0;
-		width: 60%;
-		height: 40px;
-	}
-	#ToMSQE {
-		position: absolute;
-		margin-top: 4px;
-		margin-left: 10px;
-		width: 63px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(204,255,255,1);
-		z-index: 5;
-	}
-	.ToYasakaw{
-		position: relative;
-		width: 70%;
-		height: auto;
-		margin-left: 20%;
-		margin-top: 50px;
-		box-shadow: rgba(50, 50, 93, 0.5) 2px 2px 10px 0px;
-		border-radius: 10px 10px 10px 10px;
-		transition: box-shadow 0.2s ease;
-	}
-	.ToYasakaw:hover {
-		box-shadow: rgba(50, 50, 93, 0.8) 3px 3px 15px 0px;
-	}
-	#ToYasaka_pic {
-		position: relative;
-		width: 100%;
-		overflow: visible;
-		vertical-align: top;
-	}
-	#ToYasaka_U {
-		fill: rgba(51,51,51,1);
-	}
-	.ToYasaka_U {
-		position: absolute;
-		overflow: visible;
-		margin-left: 0;
-		width: 60%;
-		height: 40px;
-	}
-	#ToYasaka {
-		position: absolute;
-		margin-top: 4px;
-		margin-left: 10px;
-		width: 63px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(255,204,204,1);
-		z-index: 5;
-	}
-	#footer_b {
-		fill: rgb(235, 235, 235);
-	}
-	.footer_b {
-		position: absolute;
-		overflow: visible;
-		text-align: center;
-		width: 100%;
-		height: 360px;
-	}
-	#Copyright {
-		position: relative;
-		text-align: center;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 20px;
-		color: rgba(51,51,51,1);
-		margin: auto;
-		top: 164px;
-	}
-	#lego {
-		position: relative;
-		text-align: right;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 12px;
-		color: rgba(51,51,51,1);
-		margin-right: 20px;
-		top: 280px;
-	}
-	#footer{
-		position: relative;
-		width: 100%;
-		height: 150px;
-		margin-top: 268px;
-	}
-	#title {
-		position: absolute;
-		overflow: visible;
-		width: 318px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: source-sans-pro, sans-serif;
-		font-weight: 600;
-		font-style: normal;
-		font-size: 200px;
-		color: rgba(51,51,51,1);
-		top: -150px;
-		left: -9px;
-		z-index: 3;
-	}
-	#title_sub {
-		right: 10%;
-		position: absolute;
-		overflow: visible;
-		width: 80%;
-		white-space: nowrap;
-		text-align: right;
-		font-family: source-sans-pro, sans-serif;
-		font-weight: 600;
-		font-style: normal;
-		font-size: 40px;
-		color: rgba(51,51,51,1);
-		top: 10px;
-		z-index: 3;
-	}
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0;
+}
+
+.layout-content {
+  width: var(--content-width);
+  margin-left: var(--content-left);
+}
+
+.media {
+  width: var(--media-width);
+}
+
+.media--right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.media--left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.hero {
+  position: relative;
+  padding-top: var(--space-hero-top);
+}
+
+.hero-title {
+  font-family: var(--font-en);
+  font-weight: 700;
+  font-size: var(--h1-size);
+  color: var(--color-title);
+  line-height: var(--hero-title-line);
+}
+
+.hero-subtitle {
+  position: absolute;
+  left: var(--layout-offset-left);
+  top: calc(
+    var(--space-hero-top) +
+    (var(--h1-size) * var(--hero-title-line))
+  );
+  width: auto;
+  margin: 0;
+  font-family: var(--font-heading-ja);
+  font-weight: 700;
+  font-size: var(--subtitle-size);
+  line-height: var(--hero-subtitle-line);
+  color: var(--color-title);
+  z-index: 2;
+}
+
+.hero-subtitle.layout-content {
+  width: auto;
+  margin-left: 0;
+}
+
+.hero-image-wrap {
+  position: relative;
+  margin-top: 0;
+}
+
+.hero-image,
+.media-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  margin-top: var(--space-md);
+}
+
+.lead {
+  font-family: var(--font-heading-ja);
+  font-size: var(--lead-size);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.section-title {
+  font-family: var(--font-heading-ja);
+  font-size: var(--section-title-size);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.section-body {
+  margin-top: var(--space-sm);
+  font-family: var(--font-body-ja);
+  font-size: var(--body-size);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.section--intro .media {
+  margin-top: var(--space-md);
+}
+
+.ar-icon-wrap {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  margin-left: 7%;
+}
+
+.ar-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.section--works {
+  margin-top: var(--space-lg);
+}
+
+.work-card {
+  position: relative;
+  display: block;
+  width: var(--card-width);
+  margin-top: var(--space-sm);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  text-decoration: none;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.work-card:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.work-card--left {
+  margin-left: 10%;
+}
+
+.work-card--right {
+  margin-left: 20%;
+}
+
+.work-card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.work-card-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 60%;
+  padding: 2.5px 8px;
+  border-top-left-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+  font-family: var(--font-heading-ja);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-label-cyan);
+  background: var(--color-overlay-bg);
+}
+
+.work-card-label--cyan {
+  color: var(--color-label-cyan);
+}
+
+.work-card-label--pink {
+  color: var(--color-label-pink);
+}
+
+.site-footer {
+  position: relative;
+  margin-top: 100px;
+  height: 150px;
+  padding-top: 60px;
+  background: var(--color-footer-bg);
+}
+
+.copyright {
+  text-align: center;
+  font-family: var(--font-body-ja);
+  font-size: 14px;
+}
+
+.lego-note {
+  margin-top: 24px;
+  margin-right: 10px;
+  text-align: right;
+  font-family: var(--font-body-ja);
+  font-size: 6px;
+}
+
+@media screen and (min-width: 735px) {
+  :root {
+    --space-sm: 40px;
+    --space-md: 80px;
+    --h1-size: 160px;
+    --hero-sub-size: 30px;
+    --lead-size: 30px;
+    --section-title-size: 25px;
+    --body-size: 20px;
+    --shadow-card: rgba(50, 50, 93, 0.5) 2px 2px 10px 0;
+    --shadow-card-hover: rgba(50, 50, 93, 0.8) 2px 2px 12px 0;
+    --hero-image-top: calc(130px + var(--hero-shift-y));
+  }
+
+  .hero-title {
+	left: calc(10% - 11px);
+  }
+
+  .hero-subtitle {
+    top: calc(10px + var(--hero-shift-y));
+    width: 80%;
+    text-align: right;
+  }
+
+  .hero-image-wrap {
+    margin-top: var(--hero-image-top);
+  }
+
+  .section--intro {
+    margin-top: 120px;
+  }
+
+  .section--intro .media {
+    margin-top: 120px;
+  }
+
+  .ar-icon-wrap {
+    width: 300px;
+    height: 300px;
+    margin-top: 28px;
+    margin-left: 5.5%;
+  }
+
+  .work-card {
+    margin-top: 40px;
+  }
+
+  .work-card-label {
+    padding: 4px 10px;
+    font-size: 20px;
+  }
+
+  .site-footer {
+    margin-top: 268px;
+    height: 360px;
+    padding-top: 164px;
+  }
+
+  .copyright {
+    font-size: 20px;
+  }
+
+  .lego-note {
+    margin-top: 96px;
+    margin-right: 20px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 1069px) {
+  :root {
+    --h1-size: 200px;
+    --section-title-size: 30px;
+    --body-size: 20px;
+    --hero-image-top: calc(130px + var(--hero-shift-y));
+  }
+
+  .hero-title {
+    left: calc(10% - 11px);
+  }
+
+  .section--intro {
+    margin-top: 100px;
+  }
+
+  .section--intro .media {
+    margin-top: 100px;
+  }
+
+  .ar-icon-wrap {
+    margin-top: 0;
+    margin-left: 5%;
+  }
+
+  .section--works {
+    margin-top: 70px;
+  }
+
+  .work-card {
+    margin-top: 50px;
+  }
+
+  .work-card:hover {
+    box-shadow: rgba(50, 50, 93, 0.8) 3px 3px 15px 0;
+  }
+
+  .lego-note {
+    font-size: 12px;
+  }
 }

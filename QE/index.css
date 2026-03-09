@@ -169,8 +169,16 @@ body {
 .swiper.gallery.layout-media,
 .media-block.layout-media {
   width: 90%;
+}
+
+.swiper.gallery.gallery--left {
   margin-left: 0;
   margin-right: 10%;
+}
+
+.swiper.gallery.gallery--right {
+  margin-left: 10%;
+  margin-right: 0;
 }
 
 .media-block--ar.layout-media,
