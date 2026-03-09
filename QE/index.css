@@ -4,6 +4,14 @@
 	box-sizing: border-box;
 	border: none;
 }
+:root {
+	--font-heading-ja: a-otf-midashi-go-mb31-pr6n, sans-serif;
+	--font-body-ja: ryo-gothic-plusn, sans-serif;
+	--font-en: source-sans-pro, sans-serif;
+	--color-text: rgba(51,51,51,1);
+	--color-black: rgba(0,0,0,1);
+	--layout-content-left: 10%;
+}
 body {
  overflow-x: hidden;
 }
@@ -74,12 +82,12 @@ body {
 			width: 327px;
 			white-space: nowrap;
 			text-align: left;
-			font-family: source-sans-pro, sans-serif;
+			font-family: var(--font-en);
 			font-weight: 700;
 			font-style: normal;
 			font-size: 31px;
-			color: rgba(0,0,0,1);
-			margin-left: 10%;
+			color: var(--color-black);
+			margin-left: var(--layout-content-left);
 			margin-top: 50px;
 		}
 		#MSQE_jp {
@@ -88,18 +96,18 @@ body {
 			width: 253px;
 			white-space: nowrap;
 			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+			font-family: var(--font-heading-ja);
 			font-style: normal;
 			font-weight: bold;
 			font-size: 14px;
-			color: rgba(0,0,0,1);
-			margin-left: 10%;
+			color: var(--color-black);
+			margin-left: var(--layout-content-left);
 			margin-top: 10px;
 		}
 		.Pic1{
 			width: 90%;
 			overflow: visible;
-			margin-left: 10%;
+			margin-left: var(--layout-content-left);
 			margin-top: 30px;
 			z-index: 0;
 		}
@@ -117,7 +125,7 @@ body {
 			width: 85px;
 			white-space: nowrap;
 			text-align: right;
-			font-family: source-sans-pro, sans-serif;
+			font-family: var(--font-en);
 			font-weight: 700;
 			font-style: normal;
 			font-size: 14px;
@@ -134,7 +142,7 @@ body {
 			width: 124px;
 			white-space: nowrap;
 			text-align: right;
-			font-family: source-sans-pro, sans-serif;
+			font-family: var(--font-en);
 			font-weight: 700;
 			font-style: normal;
 			font-size: 14px;
@@ -157,12 +165,12 @@ body {
 			width: 285px;
 			white-space: nowrap;
 			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+			font-family: var(--font-heading-ja);
 			font-style: normal;
 			font-weight: bold;
 			font-size: 18px;
-			color: rgba(51,51,51,1);
-			margin-left: 10%;
+			color: var(--color-text);
+			margin-left: var(--layout-content-left);
 			margin-top: 60px;
 		}
 		#introduction_b {
@@ -170,19 +178,19 @@ body {
 			overflow: visible;
 			width: 291px;
 			text-align: left;
-			font-family: ryo-gothic-plusn, sans-serif;
+			font-family: var(--font-body-ja);
 			font-weight: 400;
 			font-style: normal;
 			font-size: 16px;
-			color: rgba(51,51,51,1);
-			margin-left: 10%;
+			color: var(--color-text);
+			margin-left: var(--layout-content-left);
 			margin-top: 30px;
 		}
 		.swiper-container2{
 			position: relative;
 			width: 90%;
 			overflow: visible;
-			margin-left: 10%;
+			margin-left: var(--layout-content-left);
 			margin-top: 60px;
 		}
 		#Sizes_t {
@@ -191,13 +199,13 @@ body {
 			width: 80%;
 			white-space: nowrap;
 			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+			font-family: var(--font-heading-ja);
 			font-style: normal;
 			font-weight: bold;
 			font-size: 18px;
-			color: rgba(51,51,51,1);
+			color: var(--color-text);
 			margin-top: 60px;
-			margin-left: 10%;
+			margin-left: var(--layout-content-left);
 		}
 		#Sizes_b {
 			position: relative;
@@ -205,13 +213,13 @@ body {
 			width: 80%;
 			line-height: 22px;
 			text-align: left;
-			font-family: ryo-gothic-plusn, sans-serif;
+			font-family: var(--font-body-ja);
 			font-weight: 400;
 			font-style: normal;
 			font-size: 16px;
-			color: rgba(51,51,51,1);
+			color: var(--color-text);
 			margin-top: 30px;
-			margin-left: 10%;
+			margin-left: var(--layout-content-left);
 		}
 		#AR_t {
 			position: relative;
@@ -219,13 +227,13 @@ body {
 			width: 160px;
 			white-space: nowrap;
 			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+			font-family: var(--font-heading-ja);
 			font-style: normal;
 			font-weight: bold;
 			font-size: 18px;
-			color: rgba(51,51,51,1);
+			color: var(--color-text);
 			margin-top: 60px;
-			margin-left: 10%;
+			margin-left: var(--layout-content-left);
 		}
 		#AR_b{
 			position: relative;
@@ -235,7 +243,7 @@ body {
 		.AR_Pic {
 			position: relative;
 			width: 80%;
-			margin-left: 10%;
+			margin-left: var(--layout-content-left);
 			margin-right: 10%;
 			margin-top: 30px;
 			vertical-align: top;
@@ -249,19 +257,19 @@ body {
 			width: 244px;
 			white-space: nowrap;
 			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+			font-family: var(--font-heading-ja);
 			font-style: normal;
 			font-weight: bold;
 			font-size: 18px;
-			color: rgba(51,51,51,1);
-			margin-left: 10%;
+			color: var(--color-text);
+			margin-left: var(--layout-content-left);
 			margin-top: 60px;
 		}
 		.Making_b {
 			position: relative;
 			overflow: hidden;
 			width: 80%;
-			margin-left: 10%;
+			margin-left: var(--layout-content-left);
 			margin-top: 30px;
 			padding-bottom: 45%;
 		}
@@ -276,48 +284,66 @@ body {
 			position: relative;
 			overflow: visible;
 			width: 160px;
-			white-space: nowrap;
-			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 18px;
-			color: rgba(51,51,51,1);
-			margin-left: 10%;
-			margin-top: 60px;
-		}
-		.history-group {
-			margin-top: 12px;
-		}
-		.history-group + .history-group {
-			margin-top: 30px;
-		}
-		.history_year {
-			font-size: 16px;
-		}
-		.history_entries {
-			column-gap: 14px;
-		}
-		.history_months,
-		.history_details {
-			font-size: 14px;
-			line-height: 25px;
-		}
-		#Twitter {
-			position: relative;
-			overflow: visible;
-			width: 80%;
-			margin-left: 10%;
-			margin-top: 64px;
-			text-align: center;
-			max-width: 500px;
-		}
+				white-space: nowrap;
+				text-align: left;
+				font-family: var(--font-heading-ja);
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				color: var(--color-text);
+				margin-left: var(--layout-content-left);
+				margin-top: 60px;
+			}
+			.history-list {
+				position: relative;
+				width: 80%;
+				margin-left: var(--layout-content-left);
+				margin-top: 25px;
+			}
+			.history-entry + .history-entry {
+				margin-top: 25px;
+			}
+			.history-year {
+				white-space: nowrap;
+				text-align: left;
+				font-family: var(--font-heading-ja);
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				color: var(--color-text);
+				margin-bottom: 5px;
+			}
+			.history-row {
+				display: grid;
+				grid-template-columns: 37px 1fr;
+				align-items: start;
+			}
+			.history-months,
+			.history-events {
+				white-space: nowrap;
+				line-height: 25px;
+				text-align: left;
+				font-family: var(--font-body-ja);
+				font-weight: 400;
+				font-style: normal;
+				font-size: 14px;
+				color: var(--color-text);
+			}
+			#Twitter {
+				position: relative;
+				overflow: visible;
+				width: 80%;
+				margin-left: var(--layout-content-left);
+				margin-top: 60px;
+				text-align: center;
+				max-width: 500px;
+			}
 		#instagram {
 			position: relative;
 			overflow: hidden;
 			width: 80%;
 			margin-top: 30px;
-			margin-left: 10%;
+			margin-left: var(--layout-content-left);
 			max-width: 500px;
 		}
 		#Works_t {
@@ -326,13 +352,13 @@ body {
 			width: 206px;
 			white-space: nowrap;
 			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+			font-family: var(--font-heading-ja);
 			font-style: normal;
 			font-weight: bold;
 			font-size: 20px;
-			color: rgba(51,51,51,1);
+			color: var(--color-text);
 			margin-top: 50px;
-			margin-left: 10%;
+			margin-left: var(--layout-content-left);
 		}
 		.link {
 			position: absolute;
@@ -351,7 +377,7 @@ body {
 		.ToYasakaw{
 			position: relative;
 			width: 70%;
-			margin-left: 10%;
+			margin-left: var(--layout-content-left);
 			margin-top: 30px;
 			z-index: 1;
 			box-shadow: rgba(50, 50, 93, 0.5) 2px 2px 5px 0px;
@@ -388,7 +414,7 @@ body {
 			width: 63px;
 			white-space: nowrap;
 			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+			font-family: var(--font-heading-ja);
 			font-style: normal;
 			font-weight: bold;
 			font-size: 16px;
@@ -434,7 +460,7 @@ body {
 			width: 70%;
 			white-space: nowrap;
 			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+			font-family: var(--font-heading-ja);
 			font-style: normal;
 			font-weight: bold;
 			font-size: 16px;
@@ -455,11 +481,11 @@ body {
 		#Copyright {
 			position: absolute;
 			text-align: center;
-			font-family: ryo-gothic-plusn, sans-serif;
+			font-family: var(--font-body-ja);
 			font-weight: 400;
 			font-style: normal;
 			font-size: 14px;
-			color: rgba(51,51,51,1);
+			color: var(--color-text);
 			top: 60px;
 			width: 100%;
 		}
@@ -485,12 +511,12 @@ body {
 		width: 327px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: source-sans-pro, sans-serif;
+		font-family: var(--font-en);
 		font-weight: 700;
 		font-style: normal;
 		font-size: 60px;
-		color: rgba(0,0,0,1);
-		margin-left: 10%;
+		color: var(--color-black);
+		margin-left: var(--layout-content-left);
 		margin-top: 100px;
 	}
 	#MSQE_jp {
@@ -499,12 +525,12 @@ body {
 		width: 253px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+		font-family: var(--font-heading-ja);
 		font-style: normal;
 		font-weight: bold;
 		font-size: 25px;
-		color: rgba(0,0,0,1);
-		margin-left: 10%;
+		color: var(--color-black);
+		margin-left: var(--layout-content-left);
 		margin-top: 0px;
 	}
 	#May2019 {
@@ -513,7 +539,7 @@ body {
 		width: 80%;
 		white-space: nowrap;
 		text-align: right;
-		font-family: source-sans-pro, sans-serif;
+		font-family: var(--font-en);
 		font-weight: 700;
 		font-style: normal;
 		font-size: 25px;
@@ -529,7 +555,7 @@ body {
 		width: 80%;
 		white-space: nowrap;
 		text-align: right;
-		font-family: source-sans-pro, sans-serif;
+		font-family: var(--font-en);
 		font-weight: 700;
 		font-style: normal;
 		font-size: 25px;
@@ -543,7 +569,7 @@ body {
 	.Pic1{
 		width:90%;
 		overflow: visible;
-		margin-left: 10%;
+		margin-left: var(--layout-content-left);
 		margin-top: 40px;
 		z-index: 0;
 	}
@@ -567,12 +593,12 @@ body {
 		width: 80%;
 		white-space: nowrap;
 		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+		font-family: var(--font-heading-ja);
 		font-style: normal;
 		font-weight: bold;
 		font-size: 25px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
+		color: var(--color-text);
+		margin-left: var(--layout-content-left);
 		margin-top: 80px;
 	}
 	#introduction_b {
@@ -580,19 +606,19 @@ body {
 		overflow: visible;
 		width: 80%;
 		text-align: left;
-		font-family: ryo-gothic-plusn, sans-serif;
+		font-family: var(--font-body-ja);
 		font-weight: 400;
 		font-style: normal;
 		font-size: 20px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
+		color: var(--color-text);
+		margin-left: var(--layout-content-left);
 		margin-top: 40px;
 	}
 	.swiper-container2{
 		position: relative;
 		width: 90%;
 		overflow: visible;
-		margin-left: 10%;
+		margin-left: var(--layout-content-left);
 		margin-top: 80px;
 	}
 	#Sizes_t {
@@ -601,13 +627,13 @@ body {
 		width: 80%;
 		white-space: nowrap;
 		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+		font-family: var(--font-heading-ja);
 		font-style: normal;
 		font-weight: bold;
 		font-size: 25px;
-		color: rgba(51,51,51,1);
+		color: var(--color-text);
 		margin-top: 80px;
-		margin-left: 10%;
+		margin-left: var(--layout-content-left);
 	}
 	#Sizes_b {
 		position: relative;
@@ -615,13 +641,13 @@ body {
 		width: 80%;
 		line-height: 30px;
 		text-align: left;
-		font-family: ryo-gothic-plusn, sans-serif;
+		font-family: var(--font-body-ja);
 		font-weight: 400;
 		font-style: normal;
 		font-size: 20px;
-		color: rgba(51,51,51,1);
+		color: var(--color-text);
 		margin-top: 40px;
-		margin-left: 10%;
+		margin-left: var(--layout-content-left);
 	}
 	#AR_t {
 		position: relative;
@@ -629,13 +655,13 @@ body {
 		width: 160px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+		font-family: var(--font-heading-ja);
 		font-style: normal;
 		font-weight: bold;
 		font-size: 25px;
-		color: rgba(51,51,51,1);
+		color: var(--color-text);
 		margin-top: 80px;
-		margin-left: 10%;
+		margin-left: var(--layout-content-left);
 	}
 	#AR_b{
 		position: relative;
@@ -645,7 +671,7 @@ body {
 	.AR_Pic {
 		position: relative;
 		width: 80%;
-		margin-left: 10%;
+		margin-left: var(--layout-content-left);
 		margin-right: 10%;
 		margin-top: 40px;
 		vertical-align: top;
@@ -657,19 +683,19 @@ body {
 		width: 244px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+		font-family: var(--font-heading-ja);
 		font-style: normal;
 		font-weight: bold;
 		font-size: 25px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
+		color: var(--color-text);
+		margin-left: var(--layout-content-left);
 		margin-top: 80px;
 	}
 	.Making_b {
 		position: relative;
 		overflow: hidden;
 		width: 80%;
-		margin-left: 10%;
+		margin-left: var(--layout-content-left);
 		margin-top: 40px;
 		padding-bottom: 45%;
 	}
@@ -686,45 +712,63 @@ body {
 		width: 160px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+		font-family: var(--font-heading-ja);
 		font-style: normal;
 		font-weight: bold;
-		font-size: 25px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 80px;
-	}
-	.history-group {
-		margin-top: 14px;
-	}
-	.history-group + .history-group {
-		margin-top: 42px;
-	}
-	.history_year {
-		font-size: 20px;
-	}
-	.history_entries {
-		column-gap: 24px;
-	}
-	.history_months,
-	.history_details {
-		font-size: 18px;
-		line-height: 35px;
-	}
-	#Twitter {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		margin-left: 10%;
-		margin-top: 120px;
-		text-align: center;
-	}
+			font-size: 25px;
+			color: var(--color-text);
+			margin-left: var(--layout-content-left);
+			margin-top: 80px;
+		}
+		.history-list {
+			position: relative;
+			width: 80%;
+			margin-left: var(--layout-content-left);
+			margin-top: 40px;
+		}
+		.history-entry + .history-entry {
+			margin-top: 30px;
+		}
+		.history-year {
+			white-space: nowrap;
+			text-align: left;
+			font-family: var(--font-heading-ja);
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			color: var(--color-text);
+			margin-bottom: 8px;
+		}
+		.history-row {
+			display: grid;
+			grid-template-columns: 70px 1fr;
+			align-items: start;
+		}
+		.history-months,
+		.history-events {
+			white-space: nowrap;
+			line-height: 35px;
+			text-align: left;
+			font-family: var(--font-body-ja);
+			font-weight: 400;
+			font-style: normal;
+			font-size: 18px;
+			color: var(--color-text);
+		}
+		#Twitter {
+			position: relative;
+			overflow: visible;
+			width: 80%;
+			margin-left: var(--layout-content-left);
+			margin-top: 80px;
+			text-align: center;
+		}
 	#instagram {
 		position: relative;
 		overflow: hidden;
 		width: 80%;
 		margin-top: 40px;
-		margin-left: 10%;
+		margin-left: var(--layout-content-left);
 		max-width: 500px;
 	}
 	#Works_t {
@@ -733,13 +777,13 @@ body {
 		width: 206px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+		font-family: var(--font-heading-ja);
 		font-style: normal;
 		font-weight: bold;
 		font-size: 30px;
-		color: rgba(51,51,51,1);
+		color: var(--color-text);
 		margin-top: 160px;
-		margin-left: 10%;
+		margin-left: var(--layout-content-left);
 	}
 	.link {
 		position: absolute;
@@ -759,7 +803,7 @@ body {
 		position: relative;
 		width: 70%;
 		height: auto;
-		margin-left: 10%;
+		margin-left: var(--layout-content-left);
 		margin-top: 40px;
 		box-shadow: rgba(50, 50, 93, 0.5) 2px 2px 5px 0px;
 		border-radius: 10px 10px 10px 10px;
@@ -792,7 +836,7 @@ body {
 		width: 63px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+		font-family: var(--font-heading-ja);
 		font-style: normal;
 		font-weight: bold;
 		font-size: 20px;
@@ -836,7 +880,7 @@ body {
 		width: 70%;
 		white-space: nowrap;
 		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+		font-family: var(--font-heading-ja);
 		font-style: normal;
 		font-weight: bold;
 		font-size: 20px;
@@ -857,11 +901,11 @@ body {
 	#Copyright {
 		position: absolute;
 		text-align: center;
-		font-family: ryo-gothic-plusn, sans-serif;
+		font-family: var(--font-body-ja);
 		font-weight: 400;
 		font-style: normal;
 		font-size: 14px;
-		color: rgba(51,51,51,1);
+		color: var(--color-text);
 		top: 60px;
 		width: 100%;
 	}
@@ -874,400 +918,91 @@ body {
 }
 @media screen and (min-width:1069px){
 	#wrap {
-		position: relative;
 		width: 1068px;
-		background-color: rgba(255,255,255,1);
-		overflow: visible;
-		margin: auto;
-		height: auto;
 	}
 	#MSQE {
-		position: relative;
-		overflow: visible;
-		width: 327px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: source-sans-pro, sans-serif;
-		font-weight: 700;
-		font-style: normal;
 		font-size: 72px;
-		color: rgba(0,0,0,1);
-		margin-left: 10%;
-		margin-top: 100px;
 	}
 	#MSQE_jp {
-		position: relative;
-		overflow: visible;
-		width: 253px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
 		font-size: 30px;
-		color: rgba(0,0,0,1);
-		margin-left: 10%;
-		margin-top: 0px;
 	}
 	#May2019 {
-		position: absolute;
-		overflow: visible;
-		width: 80%;
-		white-space: nowrap;
-		text-align: right;
-		font-family: source-sans-pro, sans-serif;
-		font-weight: 700;
-		font-style: normal;
 		font-size: 30px;
-		color: rgba(0,0,0,1);
-		letter-spacing: 1px;
-		z-index: 2;
-		right: 10%;
+		color: var(--color-black);
 		margin-top: 0px;
 		top: 43px;
 	}
 	#SAILAWAY {
-		position: absolute;
-		overflow: visible;
-		width: 80%;
-		white-space: nowrap;
-		text-align: right;
-		font-family: source-sans-pro, sans-serif;
-		font-weight: 700;
-		font-style: normal;
 		font-size: 30px;
-		color: rgba(0,0,0,1);
-		letter-spacing: 1px;
-		margin-right: 0;
-		z-index: 1;
-		right: 10%;
+		color: var(--color-black);
 		margin-top: 0px;
 		top: 104px;
 	}
 	.Pic1{
-		width:90%;
-		overflow: visible;
-		margin-left: 10%;
 		margin-top: 50px;
-		z-index: 0;
-	}
-	#Pic1 {
-		position: relative;
-		width: 100%;
-		right: 0;
-		overflow: visible;
-		vertical-align: top;
 	}
 	.swiper-container1{
-		position: relative;
-		width: 90%;
-		overflow: visible;
-		margin-left: 0;
 		margin-top: 100px;
 	}
 	#Introduction_t {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
 		font-size: 30px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
 		margin-top: 100px;
 	}
 	#introduction_b {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		text-align: left;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 20px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
 		margin-top: 50px;
 	}
 	.swiper-container2{
-		position: relative;
-		width: 90%;
-		overflow: visible;
-		margin-left: 10%;
 		margin-top: 100px;
 	}
 	#Sizes_t {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
 		font-size: 30px;
-		color: rgba(51,51,51,1);
 		margin-top: 100px;
-		margin-left: 10%;
 	}
 	#Sizes_b {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		line-height: 30px;
-		text-align: left;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 20px;
-		color: rgba(51,51,51,1);
 		margin-top: 50px;
-		margin-left: 10%;
 	}
 	#AR_t {
-		position: relative;
-		overflow: visible;
-		width: 160px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
 		font-size: 30px;
-		color: rgba(51,51,51,1);
 		margin-top: 100px;
-		margin-left: 10%;
-	}
-	#AR_b{
-		position: relative;
-		width: 100%;
-		margin-top: 50px;
 	}
 	.AR_Pic {
-		position: relative;
-		width: 80%;
-		margin-left: 10%;
-		margin-right: 10%;
 		margin-top: 50px;
-		vertical-align: top;
-		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	}
 	#Making_t {
-		position: relative;
-		overflow: visible;
-		width: 244px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
 		font-size: 30px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
 		margin-top: 100px;
 	}
 	.Making_b {
-		position: relative;
-		overflow: hidden;
-		width: 80%;
-		margin-left: 10%;
 		margin-top: 50px;
-		padding-bottom: 45%;
-	}
-	.Making_b iframe{
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-	left: 0;
 	}
 	#history_t {
-		position: relative;
-		overflow: visible;
-		width: 160px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
 		font-size: 30px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
 		margin-top: 100px;
 	}
-	.history-group {
-		margin-top: 14px;
+	.history-list {
+		margin-top: 50px;
 	}
-	.history-group + .history-group {
-		margin-top: 48px;
-	}
-	.history_year {
+	.history-year {
 		font-size: 25px;
 	}
-	.history_entries {
-		column-gap: 24px;
-	}
-	.history_months,
-	.history_details {
+	.history-months,
+	.history-events {
 		font-size: 20px;
-		line-height: 35px;
 	}
 	#Twitter {
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		margin-left: 10%;
-		margin-top: 120px;
-		text-align: center;
+		margin-top: 100px;
 	}
 	#instagram {
-		position: relative;
-		overflow: hidden;
-		width: 80%;
 		margin-top: 50px;
-		margin-left: 10%;
-		max-width: 500px;
 	}
 	#Works_t {
-		position: relative;
-		overflow: visible;
-		width: 206px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 30px;
-		color: rgba(51,51,51,1);
 		margin-top: 200px;
-		margin-left: 10%;
-	}
-	.link {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height:100%;
-		width: 100%;
-		z-index: 3;
-	}
-	.Rect {
-		position: absolute;
-		top: 0;
-		width: 100%;
-		z-index: 1;
 	}
 	.ToYasakaw{
-		position: relative;
-		width: 70%;
-		height: auto;
-		margin-left: 10%;
 		margin-top: 50px;
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	}
-	#ToYasaka_pic {
-		position: relative;
-		width: 100%;
-		overflow: visible;
-		vertical-align: top;
-	}
-	#ToYasaka_U {
-		fill: rgba(51,51,51,1);
-	}
-	.ToYasaka_U {
-		position: absolute;
-		overflow: visible;
-		margin-left: 0;
-		width: 60%;
-		height: 40px;
-		border-radius: 10px 0px 10px 0px;
-	}
-	#ToYasaka {
-		position: absolute;
-		margin-top: 4px;
-		margin-left: 10px;
-		width: 63px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(255,204,204,1);
-		z-index: 5;
-	}
-	.ToTopw {
-		position: absolute;
-		overflow: visible;
-		width: 70%;
-		height: 44px;
-		margin-left: 20%;
-		margin-top: 40px;
-		box-shadow: rgba(50, 50, 93, 0.5) 2px 2px 5px 0px;
-		border-radius: 10px 10px 10px 10px;
-		transition: box-shadow 0.2s ease;
-	}
-	.ToTopw:hover {
-		box-shadow: rgba(50, 50, 93, 0.8) 2px 2px 10px 0px;
-	}
-	.linktop {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 44px;
-		width: 100%;
-		z-index: 3;
-	}
-	#ToTop_U {
-		fill: rgba(235,235,235,1);
-	}
-	.ToTop_U {
-		overflow: visible;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 44px;
-		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-	}
-	#ToTop {
-		width: 70%;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(83,83,83,1);
-		margin-top: 7px;
-		margin-left: 10px;
-	}
-	#footer_b {
-		fill: rgba(235,235,235,1);
-	}
-	.footer_b {
-		position: relative;
-		overflow: visible;
-		text-align: center;
-		width: 100%;
-		height: 150px;
-	}
-	#Copyright {
-		position: absolute;
-		text-align: center;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 14px;
-		color: rgba(51,51,51,1);
-		top: 60px;
-		width: 100%;
-	}
 	#footer{
-		position: relative;
-		width: 100%;
-		height: 150px;
 		margin-top: 268px;
 	}
 }
