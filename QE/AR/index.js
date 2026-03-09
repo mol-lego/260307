@@ -1,3 +1,9 @@
+function notscroll(event) {
+  if (event.cancelable) {
+    event.preventDefault();
+  }
+}
+
 document.addEventListener("wheel", notscroll, { passive: false });
 document.addEventListener("touchmove", notscroll, { passive: false });
 

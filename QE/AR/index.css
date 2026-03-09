@@ -4,9 +4,24 @@
 	box-sizing: border-box;
 	border: none;
 }
-.QE_ar{
-		position: absolute;
-		width: 100vw;
-		height: 100vh;
-		min-height: 100vh;
+#QE_ar {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+	min-height: 100vh;
+}
+
+.ar-img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.ar-model {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
 }
