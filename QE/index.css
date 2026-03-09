@@ -23,49 +23,6 @@ body {
   display: block;
   width: 100%;
 }
-.history-group {
-	position: relative;
-	width: 80%;
-	margin-left: 10%;
-	margin-top: 16px;
-}
-.history-group + .history-group {
-	margin-top: 32px;
-}
-.history_year {
-	overflow: visible;
-	white-space: nowrap;
-	text-align: left;
-	font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	color: rgba(51,51,51,1);
-}
-.history_entries {
-	display: grid;
-	grid-template-columns: max-content 1fr;
-	column-gap: 16px;
-	margin-top: 8px;
-}
-.history_months,
-.history_details {
-	overflow: visible;
-	text-align: left;
-	font-family: ryo-gothic-plusn, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	color: rgba(51,51,51,1);
-}
-.history_months {
-	white-space: nowrap;
-}
-.history_details {
-	white-space: normal;
-}
-.history_months span,
-.history_details span {
-	display: block;
-}
 @media screen and (min-width:0px){
 	#wrap {
 			position: relative;
