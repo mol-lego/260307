@@ -15,6 +15,49 @@ body {
   display: block;
   width: 100%;
 }
+.history-group {
+	position: relative;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 16px;
+}
+.history-group + .history-group {
+	margin-top: 32px;
+}
+.history_year {
+	overflow: visible;
+	white-space: nowrap;
+	text-align: left;
+	font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	color: rgba(51,51,51,1);
+}
+.history_entries {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	column-gap: 16px;
+	margin-top: 8px;
+}
+.history_months,
+.history_details {
+	overflow: visible;
+	text-align: left;
+	font-family: ryo-gothic-plusn, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: rgba(51,51,51,1);
+}
+.history_months {
+	white-space: nowrap;
+}
+.history_details {
+	white-space: normal;
+}
+.history_months span,
+.history_details span {
+	display: block;
+}
 @media screen and (min-width:0px){
 	#wrap {
 			position: relative;
@@ -243,126 +286,29 @@ body {
 			margin-left: 10%;
 			margin-top: 60px;
 		}
-		.history{
-			position: relative;
-			overflow: visible;
-			width: 80%;
-			white-space: nowrap;
-			line-height: 25px;
-			text-align: left;
-			font-family: ryo-gothic-plusn, sans-serif;
-			font-weight: 400;
-			font-style: normal;
+		.history-group {
+			margin-top: 12px;
+		}
+		.history-group + .history-group {
+			margin-top: 30px;
+		}
+		.history_year {
+			font-size: 16px;
+		}
+		.history_entries {
+			column-gap: 14px;
+		}
+		.history_months,
+		.history_details {
 			font-size: 14px;
-			color: rgba(51,51,51,1);
-			margin-left: 10%;
-			margin-top: 5px;
-		}
-		.history_m {
-			position: absolute;
-			overflow: visible;
-			width: 31px;
-			white-space: nowrap;
 			line-height: 25px;
-			text-align: left;
-			font-family: ryo-gothic-plusn, sans-serif;
-			font-weight: 400;
-			font-style: normal;
-			font-size: 14px;
-			color: rgba(51,51,51,1);
-			top: 0;
-		}
-		.history_b {
-			position: absolute;
-			overflow: visible;
-			width: 251px;
-			white-space: nowrap;
-			line-height: 25px;
-			text-align: left;
-			font-family: ryo-gothic-plusn, sans-serif;
-			font-weight: 400;
-			font-style: normal;
-			font-size: 14px;
-			color: rgba(51,51,51,1);
-			margin-left: 37px;
-			top: 0;
-		}
-		#ID2018 {
-			position: relative;
-			overflow: visible;
-			width: 51px;
-			white-space: nowrap;
-			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 16px;
-			color: rgba(51,51,51,1);
-			margin-left: 10%;
-			margin-top: 25px;
-		}
-		#ID2019 {
-			position: relative;
-			overflow: visible;
-			width: 48px;
-			white-space: nowrap;
-			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 16px;
-			color: rgba(51,51,51,1);
-			margin-left: 10%;
-			margin-top: 54px;
-		}
-		#ID2020 {
-			position: relative;
-			overflow: visible;
-			width: 57px;
-			white-space: nowrap;
-			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 16px;
-			color: rgba(51,51,51,1);
-			margin-left: 10%;
-			margin-top: 290px;
-		}
-		#ID2021 {
-			position: relative;
-			overflow: visible;
-			width: 57px;
-			white-space: nowrap;
-			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 16px;
-			color: rgba(51,51,51,1);
-			margin-left: 10%;
-			margin-top: 220px;
-		}
-		#ID2022 {
-			position: relative;
-			overflow: visible;
-			width: 57px;
-			white-space: nowrap;
-			text-align: left;
-			font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 16px;
-			color: rgba(51,51,51,1);
-			margin-left: 10%;
-			margin-top: 250px;
 		}
 		#Twitter {
 			position: relative;
 			overflow: visible;
 			width: 80%;
 			margin-left: 10%;
-			margin-top: 114px;
+			margin-top: 64px;
 			text-align: center;
 			max-width: 600px;
 		}
@@ -806,112 +752,29 @@ body {
 		margin-left: 10%;
 		margin-top: 80px;
 	}
-	.history{
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		white-space: nowrap;
-		line-height: 25px;
-		text-align: left;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 14px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 5px;
+	.history-group {
+		margin-top: 14px;
 	}
-	.history_m {
-		position: absolute;
-		overflow: visible;
-		width: 31px;
-		white-space: nowrap;
-		line-height: 35px;
-		text-align: left;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
+	.history-group + .history-group {
+		margin-top: 42px;
+	}
+	.history_year {
+		font-size: 20px;
+	}
+	.history_entries {
+		column-gap: 24px;
+	}
+	.history_months,
+	.history_details {
 		font-size: 18px;
-		color: rgba(51,51,51,1);
-		top: 0;
-	}
-	.history_b {
-		position: absolute;
-		overflow: visible;
-		width: 251px;
-		white-space: nowrap;
 		line-height: 35px;
-		text-align: left;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 18px;
-		color: rgba(51,51,51,1);
-		margin-left: 70px;
-		top: 0;
-	}
-	#ID2018 {
-		position: relative;
-		overflow: visible;
-		width: 51px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 40px;
-	}
-	#ID2019 {
-		position: relative;
-		overflow: visible;
-		width: 48px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 70px;
-	}
-	#ID2020 {
-		position: relative;
-		overflow: visible;
-		width: 57px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 128px;
-	}
-	#ID2021 {
-		position: relative;
-		overflow: visible;
-		width: 57px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 20px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 300px;
 	}
 	#Twitter {
 		position: relative;
 		overflow: visible;
 		width: 80%;
 		margin-left: 10%;
-		margin-top: 190px;
+		margin-top: 120px;
 		text-align: center;
 	}
 	#instagram {
@@ -1337,112 +1200,29 @@ body {
 		margin-left: 10%;
 		margin-top: 100px;
 	}
-	.history{
-		position: relative;
-		overflow: visible;
-		width: 80%;
-		white-space: nowrap;
-		line-height: 25px;
-		text-align: left;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 14px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 5px;
+	.history-group {
+		margin-top: 14px;
 	}
-	.history_m {
-		position: absolute;
-		overflow: visible;
-		width: 31px;
-		white-space: nowrap;
-		line-height: 35px;
-		text-align: left;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
+	.history-group + .history-group {
+		margin-top: 48px;
+	}
+	.history_year {
+		font-size: 25px;
+	}
+	.history_entries {
+		column-gap: 24px;
+	}
+	.history_months,
+	.history_details {
 		font-size: 20px;
-		color: rgba(51,51,51,1);
-		top: 0;
-	}
-	.history_b {
-		position: absolute;
-		overflow: visible;
-		width: 251px;
-		white-space: nowrap;
 		line-height: 35px;
-		text-align: left;
-		font-family: ryo-gothic-plusn, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 20px;
-		color: rgba(51,51,51,1);
-		margin-left: 70px;
-		top: 0;
-	}
-	#ID2018 {
-		position: relative;
-		overflow: visible;
-		width: 51px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 50px;
-	}
-	#ID2019 {
-		position: relative;
-		overflow: visible;
-		width: 48px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 70px;
-	}
-	#ID2020 {
-		position: relative;
-		overflow: visible;
-		width: 57px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 376px;
-	}
-	#ID2021 {
-		position: relative;
-		overflow: visible;
-		width: 57px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		color: rgba(51,51,51,1);
-		margin-left: 10%;
-		margin-top: 300px;
 	}
 	#Twitter {
 		position: relative;
 		overflow: visible;
 		width: 80%;
 		margin-left: 10%;
-		margin-top: 200px;
+		margin-top: 120px;
 		text-align: center;
 	}
 	#instagram {
