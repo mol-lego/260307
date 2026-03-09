@@ -46,11 +46,13 @@
 <div class="page">
   <main class="container">
     <header class="hero">
-      <h1 class="hero-title">MS Queen Elizabeth</h1>
-      <p class="hero-subtitle">豪華客船 クイーンエリザベス号</p>
-      <figure class="hero-image-wrap">
+      <div class="layout-content hero-copy">
+        <h1 class="hero-title">MS Queen Elizabeth</h1>
+        <p class="hero-subtitle">豪華客船 クイーンエリザベス号</p>
+      </div>
+      <figure class="hero-image-wrap layout-media">
         <img class="hero-image" src="Pic1.jpeg" srcset="Pic1.jpeg 1x, Pic1@2x.jpeg 2x" alt="MS Queen Elizabeth 作品全景"/>
-        <figcaption class="hero-caption" aria-label="展示情報">
+        <figcaption class="hero-caption">
           <span class="hero-caption-date">5/2~5/3 2019</span>
           <span class="hero-caption-title">SAIL AWAY</span>
         </figcaption>
@@ -58,7 +60,7 @@
     </header>
 
     <section class="section section--gallery-edge" aria-label="作品写真ギャラリー1">
-      <div class="swiper gallery gallery--edge js-swiper">
+      <div class="swiper gallery js-swiper layout-media layout-media--edge">
         <div class="swiper-pagination swiper-pagination-white"></div>
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="Pic2-1.jpeg" srcset="Pic2-1.jpeg 1x, Pic2-1@2x.jpeg 2x" alt="MS Queen Elizabeth 写真 1"/></div>
@@ -70,12 +72,14 @@
     </section>
 
     <section class="section">
-      <h2 class="section-title">言わずと知れた豪華客船</h2>
-      <p class="section-body">全長は294m。2000人を超える人を招き入れ、3階建てのシアター、プールにフィットネスジム、食事もショッピングも楽しめるこの船は、いわば海に浮かぶ一つの街。</p>
+      <div class="section-content layout-content">
+        <h2 class="section-title">言わずと知れた豪華客船</h2>
+        <p class="section-body">全長は294m。2000人を超える人を招き入れ、3階建てのシアター、プールにフィットネスジム、食事もショッピングも楽しめるこの船は、いわば海に浮かぶ一つの街。</p>
+      </div>
     </section>
 
     <section class="section" aria-label="作品写真ギャラリー2">
-      <div class="swiper gallery js-swiper">
+      <div class="swiper gallery js-swiper layout-media">
         <div class="swiper-pagination swiper-pagination-white"></div>
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="Pic3-1.jpeg" srcset="Pic3-1.jpeg 1x, Pic3-1@2x.jpeg 2x" alt="MS Queen Elizabeth 詳細写真 1"/></div>
@@ -89,99 +93,171 @@
     </section>
 
     <section class="section">
-      <h2 class="section-title">全長3m、35,000 ピース。</h2>
-      <dl class="spec-list section-body">
-        <div class="spec-row"><dt>スケール</dt><dd>1/100</dd></div>
-        <div class="spec-row"><dt>全長</dt><dd>297.6 cm</dd></div>
-        <div class="spec-row"><dt>全幅</dt><dd>32.0 cm</dd></div>
-        <div class="spec-row"><dt>全高</dt><dd>63.4 cm</dd></div>
-        <div class="spec-divider" aria-hidden="true"></div>
-        <div class="spec-row"><dt>設計</dt><dd>250時間</dd></div>
-        <div class="spec-row"><dt>組立</dt><dd>50時間</dd></div>
-      </dl>
+      <div class="section-content layout-content">
+        <h2 class="section-title">全長3m、35,000 ピース。</h2>
+        <dl class="spec-list section-body">
+          <div class="spec-row"><dt>スケール</dt><dd>1/100</dd></div>
+          <div class="spec-row"><dt>全長</dt><dd>297.6 cm</dd></div>
+          <div class="spec-row"><dt>全幅</dt><dd>32.0 cm</dd></div>
+          <div class="spec-row"><dt>全高</dt><dd>63.4 cm</dd></div>
+          <div class="spec-divider" aria-hidden="true"></div>
+          <div class="spec-row"><dt>設計</dt><dd>250時間</dd></div>
+          <div class="spec-row"><dt>組立</dt><dd>50時間</dd></div>
+        </dl>
+      </div>
     </section>
 
     <section class="section">
-      <h2 class="section-title">実物大でどうぞ。</h2>
-      <a class="media-block media-block--ar" href="https://mol-lego.github.io/220611/QE/AR/index.html">
+      <div class="section-content layout-content">
+        <h2 class="section-title">実物大でどうぞ。</h2>
+      </div>
+      <a class="media-block media-block--ar layout-media" href="https://mol-lego.github.io/220611/QE/AR/index.html">
         <img class="media-image" src="ARQE.jpeg" srcset="ARQE.jpeg 1x, ARQE@2x.jpeg 2x" alt="MS Queen Elizabeth AR体験ページ"/>
       </a>
     </section>
 
     <section class="section">
-      <h2 class="section-title">組立の様子はこちらから。</h2>
-      <div class="media-block media-block--video">
+      <div class="section-content layout-content">
+        <h2 class="section-title">組立の様子はこちらから。</h2>
+      </div>
+      <div class="media-block media-block--video layout-media">
         <iframe class="youtube" loading="lazy" src="https://www.youtube.com/embed/H8JTmG40KX0" title="MS Queen Elizabeth 組立動画" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
 
     <section class="section history" aria-labelledby="history-title">
-      <h2 class="section-title" id="history-title">あしあと。</h2>
-      <ul class="history-list">
-        <li class="history-entry">
-          <h3 class="history-year">2018</h3>
-          <ul class="history-events-list">
-            <li><span class="history-month">5月</span><span class="history-event">テーマの検討開始</span></li>
-            <li><span class="history-month">9月</span><span class="history-event">テーマが ”MS Queen Elizabeth” に決定</span></li>
-            <li><span class="history-month">9月</span><span class="history-event">設計開始</span></li>
-          </ul>
-        </li>
-        <li class="history-entry">
-          <h3 class="history-year">2019</h3>
-          <ul class="history-events-list">
-            <li><span class="history-month">1月</span><span class="history-event">設計完了</span></li>
-            <li><span class="history-month">4月</span><span class="history-event">完成</span></li>
-            <li><span class="history-month">5月</span><span class="history-event">お披露目</span></li>
-            <li><span class="history-month">5月</span><span class="history-event">第73回文化祭 “SAIL AWAY”</span></li>
-            <li><span class="history-month">6月</span><span class="history-event">Japan Brickfest 2019</span></li>
-            <li><span class="history-month">6月</span><span class="history-event">サンテレビニュース 出演</span></li>
-            <li><span class="history-month">7月</span><span class="history-event">NHK 「Live Love ひょうご」 出演</span></li>
-            <li><span class="history-month">10月</span><span class="history-event">産経新聞 掲載</span></li>
-            <li><span class="history-month">10月</span><span class="history-event">船場まつり</span></li>
-            <li><span class="history-month">11月</span><span class="history-event">神戸レゴオフ</span></li>
-          </ul>
-        </li>
-        <li class="history-entry">
-          <h3 class="history-year">2020</h3>
-          <ul class="history-events-list">
-            <li><span class="history-month">5月</span><span class="history-event">AR公開 (2020年度特設ページ)</span></li>
-            <li><span class="history-month">7月</span><span class="history-event">灘校オンライン文化祭 ”vivid”</span></li>
-            <li><span class="history-month">8月</span><span class="history-event">近鉄百貨店 奈良店 展示会</span></li>
-          </ul>
-        </li>
-        <li class="history-entry">
-          <h3 class="history-year">2021</h3>
-          <ul class="history-events-list">
-            <li><span class="history-month">1月</span><span class="history-event">ホテル ナビオス横浜 展示 (〜2月末)</span></li>
-            <li><span class="history-month">5月</span><span class="history-event">2021年度特設ページ (当ホームページ)</span></li>
-            <li><span class="history-month">6月</span><span class="history-event">第75回灘校文化祭 ”Knock&Dive”</span></li>
-          </ul>
-        </li>
-        <li class="history-entry">
-          <h3 class="history-year">2022</h3>
-          <ul class="history-events-list">
-            <li><span class="history-month">5月</span><span class="history-event">第76回灘校文化祭 ”Turn it Over”</span></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="section-content layout-content">
+        <h2 class="section-title" id="history-title">あしあと。</h2>
+        <ul class="history-list">
+          <li class="history-entry">
+            <h3 class="history-year">2018</h3>
+            <dl class="history-events">
+              <div class="history-event-row">
+                <dt><time datetime="2018-05">5月</time></dt>
+                <dd>テーマの検討開始</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2018-09">9月</time></dt>
+                <dd>テーマが ”MS Queen Elizabeth” に決定</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2018-09">9月</time></dt>
+                <dd>設計開始</dd>
+              </div>
+            </dl>
+          </li>
+          <li class="history-entry">
+            <h3 class="history-year">2019</h3>
+            <dl class="history-events">
+              <div class="history-event-row">
+                <dt><time datetime="2019-01">1月</time></dt>
+                <dd>設計完了</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2019-04">4月</time></dt>
+                <dd>完成</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2019-05">5月</time></dt>
+                <dd>お披露目</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2019-05">5月</time></dt>
+                <dd>第73回文化祭 “SAIL AWAY”</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2019-06">6月</time></dt>
+                <dd>Japan Brickfest 2019</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2019-06">6月</time></dt>
+                <dd>サンテレビニュース 出演</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2019-07">7月</time></dt>
+                <dd>NHK 「Live Love ひょうご」 出演</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2019-10">10月</time></dt>
+                <dd>産経新聞 掲載</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2019-10">10月</time></dt>
+                <dd>船場まつり</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2019-11">11月</time></dt>
+                <dd>神戸レゴオフ</dd>
+              </div>
+            </dl>
+          </li>
+          <li class="history-entry">
+            <h3 class="history-year">2020</h3>
+            <dl class="history-events">
+              <div class="history-event-row">
+                <dt><time datetime="2020-05">5月</time></dt>
+                <dd>AR公開 (2020年度特設ページ)</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2020-07">7月</time></dt>
+                <dd>灘校オンライン文化祭 ”vivid”</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2020-08">8月</time></dt>
+                <dd>近鉄百貨店 奈良店 展示会</dd>
+              </div>
+            </dl>
+          </li>
+          <li class="history-entry">
+            <h3 class="history-year">2021</h3>
+            <dl class="history-events">
+              <div class="history-event-row">
+                <dt><time datetime="2021-01">1月</time></dt>
+                <dd>ホテル ナビオス横浜 展示 (〜2月末)</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2021-05">5月</time></dt>
+                <dd>2021年度特設ページ (当ホームページ)</dd>
+              </div>
+              <div class="history-event-row">
+                <dt><time datetime="2021-06">6月</time></dt>
+                <dd>第75回灘校文化祭 ”Knock&Dive”</dd>
+              </div>
+            </dl>
+          </li>
+          <li class="history-entry">
+            <h3 class="history-year">2022</h3>
+            <dl class="history-events">
+              <div class="history-event-row">
+                <dt><time datetime="2022-05">5月</time></dt>
+                <dd>第76回灘校文化祭 ”Turn it Over”</dd>
+              </div>
+            </dl>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="section section--embed" aria-label="SNS投稿">
-      <div class="embed-block">
-        <blockquote class="twitter-tweet" tw-align-center data-theme="light" data-width="100%" data-align="center"><p lang="ja" dir="ltr">遂に公開！！<br>豪華客船 Queen Elizabeth III<br>を1/100スケールでLEGOで製作しました！！<br><br>パーツ数: 約30,000pcs<br>全長: 298cm(372ポッチ)<br>横幅: 32cm(40ポッチ)<br>高さ: 63cm(66ブロック)<br><br>合計300時間近くを費やした超大作です！！ <a href="https://t.co/eBBN07svG7">pic.twitter.com/eBBN07svG7</a></p>&mdash; mol (@mol_lego) <a href="https://twitter.com/mol_lego/status/1117246721333972992?ref_src=twsrc%5Etfw">April 14, 2019</a></blockquote>
-      </div>
-      <div class="embed-block embed-block--instagram">
-        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BwOPysUnMvX/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12"></blockquote>
+      <div class="section-content layout-content">
+        <div class="embed-block">
+          <blockquote class="twitter-tweet" tw-align-center data-theme="light" data-width="100%" data-align="center"><p lang="ja" dir="ltr">遂に公開！！<br>豪華客船 Queen Elizabeth III<br>を1/100スケールでLEGOで製作しました！！<br><br>パーツ数: 約30,000pcs<br>全長: 298cm(372ポッチ)<br>横幅: 32cm(40ポッチ)<br>高さ: 63cm(66ブロック)<br><br>合計300時間近くを費やした超大作です！！ <a href="https://t.co/eBBN07svG7">pic.twitter.com/eBBN07svG7</a></p>&mdash; mol (@mol_lego) <a href="https://twitter.com/mol_lego/status/1117246721333972992?ref_src=twsrc%5Etfw">April 14, 2019</a></blockquote>
+        </div>
+        <div class="embed-block embed-block--instagram">
+          <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BwOPysUnMvX/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12"></blockquote>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <h2 class="section-title">順路はこちらです。</h2>
-      <a class="card-link" href="https://mamorutanabe.com/Yasaka/">
-        <img class="card-link-image" src="ToYasaka_pic.jpeg" srcset="ToYasaka_pic.jpeg 1x, ToYasaka_pic@2x.jpeg 2x" alt="展示室 2 八坂神社"/>
-        <span class="card-link-label">展示室 2　八坂神社</span>
-      </a>
-      <a class="button-link" href="https://mamorutanabe.com/">エントランスへ戻る</a>
+      <div class="section-content layout-content">
+        <h2 class="section-title">順路はこちらです。</h2>
+        <a class="card-link" href="https://mamorutanabe.com/Yasaka/">
+          <img class="card-link-image" src="ToYasaka_pic.jpeg" srcset="ToYasaka_pic.jpeg 1x, ToYasaka_pic@2x.jpeg 2x" alt="展示室 2 八坂神社"/>
+          <span class="card-link-label">展示室 2　八坂神社</span>
+        </a>
+        <a class="button-link" href="https://mamorutanabe.com/">エントランスへ戻る</a>
+      </div>
     </section>
   </main>
 
