@@ -44,22 +44,38 @@
 <body>
 <div class="page">
   <main class="container">
-    <header class="hero">
-      <h1 class="hero-title">mol</h1>
-      <p class="hero-subtitle">オンライン展示室</p>
+    <nav class="site-nav" aria-label="ページ内ナビゲーション">
+      <div class="site-nav-inner">
+        <a class="site-nav-brand" href="#top">mol</a>
+        <div class="site-nav-links">
+          <a class="site-nav-link" href="#intro">About</a>
+          <a class="site-nav-link" href="#works">Works</a>
+          <a class="site-nav-link" href="#ar">AR</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      <div class="hero-copy layout-content">
+        <h1 class="hero-title">mol</h1>
+        <div class="hero-subtitles">
+          <p class="hero-subtitle">LEGO<sup>&reg;</sup>作品</p>
+          <p class="hero-subtitle">ポートフォリオ</p>
+        </div>
+      </div>
       <figure class="hero-image-wrap media media--right">
         <img class="hero-image" src="Pic1.jpg" srcset="Pic1.jpg 1x, Pic1@2x.jpg 2x" alt="トップビジュアル"/>
       </figure>
     </header>
 
-    <section class="section section--intro">
+    <section class="section section--intro" id="intro">
       <p class="lead layout-content">僕はmol。<br/>LEGO<sup>&reg;</sup>作品をつくります。<br/>ここはオンラインの展示室。<br/>いつでもどこでも、作品をご覧いただけます。</p>
       <figure class="media media--left">
         <img class="media-image" src="Pic2.jpg" srcset="Pic2.jpg 1x, Pic2@2x.jpg 2x" alt="展示作品イメージ"/>
       </figure>
     </section>
 
-    <section class="section section--ar">
+    <section class="section section--ar" id="ar">
       <div class="layout-content">
         <h2 class="section-title">本物と同じ大きさで</h2>
         <p class="section-body">作品の大きさは何mにもおよびます。写真と動画だけじゃつまらない。どうやったらその大きさを実感してもらえるだろう。<br/>出した答えは AR でした。Augmented Reality。拡張現実。<br/>スマートフォンやタブレットでご覧の方はARのアイコンをタップしてみてください。<br/>あなたの目の前に、そのままの大きさで作品が現れます。</p>
@@ -69,7 +85,7 @@
       </div>
     </section>
 
-    <section class="section section--works">
+    <section class="section section--works" id="works">
       <div class="layout-content">
         <h2 class="section-title">展示室はこちらです。<br/>ご覧あれ！</h2>
       </div>
