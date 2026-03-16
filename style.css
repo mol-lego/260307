@@ -24,14 +24,14 @@
   --media-width: 90%;
   --card-width: 70%;
 
-  --space-hero-top: 72px;
+  --space-hero-top: 12px;
   --space-hero-sub: 8px;
   --space-sm: 30px;
   --space-md: 60px;
   --space-lg: 70px;
   --hero-shift-y: 30px;
   --hero-image-top: 36px;
-  --hero-overlap: 52px;
+  --hero-overlap: 36px;
   --hero-title-line: 1;	
   --hero-subtitle-line: 1.2;
   --layout-offset-left: var(--content-left);
@@ -43,9 +43,11 @@
   --section-title-size: 18px;
   --body-size: 16px;
 
-  --radius-md: 10px;
+  --radius-md: 5px;
   --shadow-card: rgba(50, 50, 93, 0.5) 2px 2px 5px 0;
   --shadow-card-hover: rgba(50, 50, 93, 0.8) 2px 2px 10px 0;
+  --shadow-layer-soft: 0 6px 18px rgba(24, 32, 56, 0.05);
+  --shadow-layer-deep: 0 14px 32px rgba(24, 32, 56, 0.11);
   --nav-height: 64px;
 }
 body {
@@ -79,6 +81,21 @@ body {
   padding-bottom: 16px;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-16px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
+}
+
+.site-nav.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .site-nav-inner {
@@ -140,11 +157,28 @@ body {
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  z-index: 3;
+  z-index: 5;
   width: fit-content;
   max-width: min(76%, 560px);
   margin-bottom: calc(var(--hero-overlap) * -1);
-  padding: 0 28px 18px 0;
+  padding: 0 36px 28px 0;
+}
+
+.layer-card,
+.layer-surface {
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.layer-card {
+  position: relative;
+  z-index: 4;
+  filter: drop-shadow(0 8px 18px rgba(20, 26, 44, 0.05));
+}
+
+.layer-surface {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-title {
@@ -176,7 +210,7 @@ body {
 }
 
 .hero-lead {
-  margin-top: 14px;
+  margin-top: 20px;
   max-width: 560px;
   font-family: var(--font-body-ja);
   font-size: 14px;
@@ -189,6 +223,7 @@ body {
   position: relative;
   z-index: 1;
   margin-top: 0;
+  box-shadow: 0 10px 28px rgba(24, 32, 56, 0.08);
 }
 
 .hero-image-wrap::before {
@@ -224,7 +259,7 @@ body {
 }
 
 .section {
-  margin-top: var(--space-md);
+  margin-top: calc(var(--space-md) + 12px);
 }
 
 .lead {
@@ -232,6 +267,7 @@ body {
   font-size: var(--lead-size);
   font-weight: 700;
   line-height: 1.6;
+  text-shadow: 0 3px 10px rgba(24, 32, 56, 0.08);
 }
 
 .section-title {
@@ -249,8 +285,15 @@ body {
   line-height: 1.7;
 }
 
+.section--intro .lead,
+.section--ar .layout-content,
+.section--works .layout-content {
+  text-shadow: 0 3px 10px rgba(24, 32, 56, 0.08);
+}
+
 .section--intro .media {
-  margin-top: var(--space-md);
+  margin-top: calc(var(--space-md) + 16px);
+  box-shadow: 0 10px 28px rgba(24, 32, 56, 0.07);
 }
 
 .ar-icon-wrap {
@@ -258,6 +301,7 @@ body {
   height: 80px;
   margin-top: 10px;
   margin-left: 7%;
+  box-shadow: 0 8px 18px rgba(24, 32, 56, 0.05);
 }
 
 .ar-icon {
@@ -279,11 +323,14 @@ body {
   box-shadow: var(--shadow-card);
   text-decoration: none;
   overflow: hidden;
-  transition: box-shadow 0.2s ease;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 .work-card:hover {
   box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
 }
 
 .work-card--left {
@@ -350,6 +397,7 @@ body {
   :root {
     --space-sm: 40px;
     --space-md: 80px;
+    --space-hero-top: 18px;
     --h1-size: 160px;
     --hero-sub-size: 30px;
     --lead-size: 30px;
@@ -358,7 +406,7 @@ body {
     --shadow-card: rgba(50, 50, 93, 0.5) 2px 2px 10px 0;
     --shadow-card-hover: rgba(50, 50, 93, 0.8) 2px 2px 12px 0;
     --hero-image-top: 44px;
-    --hero-overlap: 104px;
+    --hero-overlap: 76px;
     --nav-height: 76px;
   }
 
@@ -383,7 +431,13 @@ body {
     margin-top: 0;
   }
 
+  .hero-copy {
+    padding-right: 44px;
+    padding-bottom: 34px;
+  }
+
   .hero-lead {
+    margin-top: 24px;
     max-width: 760px;
     font-size: 18px;
   }
@@ -397,11 +451,11 @@ body {
   }
 
   .section--intro {
-    margin-top: 120px;
+    margin-top: 136px;
   }
 
   .section--intro .media {
-    margin-top: 120px;
+    margin-top: 136px;
   }
 
   .ar-icon-wrap {
@@ -439,11 +493,12 @@ body {
 
 @media screen and (min-width: 1069px) {
   :root {
+    --space-hero-top: 24px;
     --h1-size: 200px;
     --section-title-size: 30px;
     --body-size: 20px;
     --hero-image-top: 52px;
-    --hero-overlap: 132px;
+    --hero-overlap: 96px;
     --nav-height: 84px;
   }
 
@@ -452,7 +507,13 @@ body {
     padding-bottom: 22px;
   }
 
+  .hero-copy {
+    padding-right: 52px;
+    padding-bottom: 38px;
+  }
+
   .hero-lead {
+    margin-top: 28px;
     max-width: 820px;
     font-size: 20px;
   }
