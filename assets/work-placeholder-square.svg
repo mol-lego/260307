@@ -1,0 +1,8 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="720" fill="#F5F5F5"/>
+  <rect x="52" y="52" width="616" height="616" rx="18" fill="#EBEBEB"/>
+  <circle cx="236" cy="250" r="92" fill="#D9E4EC"/>
+  <rect x="344" y="176" width="214" height="148" rx="16" fill="#E0E0E0"/>
+  <path d="M118 544C196 466 278 426 364 426C450 426 534 466 614 544V616H118V544Z" fill="#E2EBF1"/>
+  <text x="120" y="604" fill="#696969" font-family="Source Sans Pro, Arial, sans-serif" font-size="26" letter-spacing="4">SMALL WORK</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" fill="#F4F4F4"/>
+  <rect x="54" y="54" width="1092" height="652" rx="18" fill="#EBEBEB"/>
+  <rect x="106" y="108" width="280" height="196" rx="16" fill="#DFDFDF"/>
+  <rect x="424" y="108" width="670" height="196" rx="16" fill="#E6E6E6"/>
+  <path d="M126 548C252 470 368 424 474 410C612 392 774 432 960 530V652H126V548Z" fill="#DDE8F0"/>
+  <path d="M160 510C300 430 424 392 532 384C662 374 804 406 958 486" stroke="#9EB6C7" stroke-width="14" stroke-linecap="round"/>
+  <text x="108" y="628" fill="#6A6A6A" font-family="Source Sans Pro, Arial, sans-serif" font-size="30" letter-spacing="5">WORK IMAGE PLACEHOLDER</text>
+</svg>

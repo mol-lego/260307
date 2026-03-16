@@ -5,12 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta property="og:title" content="mol - オンライン展示室"/>
+<meta property="og:title" content="mol - LEGO作品ポートフォリオ"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://mol-lego.github.io/220611/index.html"/>
 <meta property="og:image" content="https://mol-lego.github.io/220611/top.jpg"/>
-<meta property="og:description" content="大型のLEGO&reg;作品を、実物大でご覧いただける特設サイトです。"/>
-<title>mol - オンライン展示室</title>
+<meta property="og:description" content="大型作品から小さな情景作品まで、LEGO作品をまとめたポートフォリオサイトです。"/>
+<title>mol - LEGO作品ポートフォリオ</title>
 <link rel="stylesheet" href="style.css"/>
 <script>
   (function(d) {
@@ -43,60 +43,230 @@
 </head>
 <body>
 <div class="page">
+  <header class="site-nav" aria-label="サイト内ナビゲーション">
+    <div class="site-nav-inner">
+      <a class="site-nav-brand" href="#top">mol</a>
+      <nav class="site-nav-links">
+        <a class="site-nav-link" href="#works">作品一覧</a>
+        <a class="site-nav-link" href="#making">制作記録</a>
+        <a class="site-nav-link" href="#ar3d">ARで見る</a>
+        <a class="site-nav-link" href="#about">作家について</a>
+      </nav>
+    </div>
+  </header>
+
   <main class="container">
-    <nav class="site-nav" aria-label="ページ内ナビゲーション">
-      <div class="site-nav-inner">
-        <a class="site-nav-brand" href="#top">mol</a>
-        <div class="site-nav-links">
-          <a class="site-nav-link" href="#intro">About</a>
-          <a class="site-nav-link" href="#works">Works</a>
-          <a class="site-nav-link" href="#ar">AR</a>
-        </div>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy" data-parallax-speed="0.18">
+        <p class="hero-kicker">LEGO Works Portfolio</p>
+        <h1 class="hero-title" id="hero-title">mol</h1>
+        <p class="hero-subtitle">LEGO<sup>&reg;</sup>作品 / ポートフォリオ</p>
+        <p class="hero-description">大型作品から小さな情景作品まで、LEGO<sup>&reg;</sup>を用いた立体作品を制作しています。</p>
       </div>
-    </nav>
-
-    <header class="hero" id="top">
-      <div class="hero-copy layout-content layer-card" data-parallax-speed="0.18">
-        <h1 class="hero-title">mol</h1>
-        <div class="hero-subtitles">
-          <p class="hero-subtitle">LEGO<sup>&reg;</sup>作品</p>
-          <p class="hero-subtitle">ポートフォリオ</p>
-        </div>
-      </div>
-      <figure class="hero-image-wrap media media--right layer-surface" data-parallax-speed="0.06">
-        <img class="hero-image" src="Pic1.jpg" srcset="Pic1.jpg 1x, Pic1@2x.jpg 2x" alt="トップビジュアル"/>
-      </figure>
-    </header>
-
-    <section class="section section--intro" id="intro">
-      <p class="lead layout-content layer-card">大型の再現作品から小さな情景作品まで、LEGO&reg;ブロックを使った立体作品をつくっています。</p>
-      <figure class="media media--left layer-surface">
-        <img class="media-image" src="Pic2.jpg" srcset="Pic2.jpg 1x, Pic2@2x.jpg 2x" alt="展示作品イメージ"/>
+      <figure class="hero-media" data-parallax-speed="0.06">
+        <img class="hero-image" src="assets/hero-placeholder.svg" alt="ヒーロー写真プレースホルダー"/>
+        <figcaption class="hero-caption">展示会場やポートフォリオで使用する代表写真の差し替えを想定した仮画像です。</figcaption>
       </figure>
     </section>
 
-    <section class="section section--ar" id="ar">
-      <div class="layout-content layer-card">
-        <h2 class="section-title">本物と同じ大きさで</h2>
-        <p class="section-body">作品の大きさは何mにもおよびます。写真と動画だけじゃつまらない。どうやったらその大きさを実感してもらえるだろう。<br/>出した答えは AR でした。Augmented Reality。拡張現実。<br/>スマートフォンやタブレットでご覧の方はARのアイコンをタップしてみてください。<br/>あなたの目の前に、そのままの大きさで作品が現れます。</p>
+    <section class="section section--featured" id="works" data-reveal>
+      <div class="section-heading">
+        <p class="section-eyebrow">Works Index</p>
+        <h2 class="section-title">代表作</h2>
+        <p class="section-intro">まずは現在のポートフォリオを代表する大型作品からご覧いただける構成に整理しています。</p>
       </div>
-      <div class="ar-icon-wrap layer-surface">
-        <img class="ar-icon" src="AR_pic.jpg" srcset="AR_pic.jpg 1x, AR_pic@2x.jpg 2x" alt="ARアイコン"/>
+
+      <div class="works-featured-grid">
+        <article class="work-panel work-panel--featured">
+          <a class="work-panel-link" href="https://mamorutanabe.com/QE/">
+            <div class="work-panel-media">
+              <img class="work-panel-image" src="assets/work-placeholder-wide.svg" alt="MS Queen Elizabeth の代表写真プレースホルダー"/>
+            </div>
+            <div class="work-panel-body">
+              <div class="work-panel-meta">
+                <span class="work-number">No.01</span>
+                <span class="work-tag">代表作</span>
+              </div>
+              <h3 class="work-title">MS Queen Elizabeth</h3>
+              <p class="work-copy">客船の量感と水平ラインを重視して構成した大型再現作品。展示空間に入った時の圧を大切にしています。</p>
+              <dl class="work-specs">
+                <div class="work-spec"><dt>サイズ</dt><dd>後日掲載</dd></div>
+                <div class="work-spec"><dt>ピース数</dt><dd>後日掲載</dd></div>
+                <div class="work-spec"><dt>公開</dt><dd>作品ページへ</dd></div>
+              </dl>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-panel work-panel--featured">
+          <a class="work-panel-link" href="https://mamorutanabe.com/Venice/">
+            <div class="work-panel-media">
+              <img class="work-panel-image" src="assets/work-placeholder-wide.svg" alt="ヴェネツィアの代表写真プレースホルダー"/>
+            </div>
+            <div class="work-panel-body">
+              <div class="work-panel-meta">
+                <span class="work-number">No.02</span>
+                <span class="work-tag">新作枠</span>
+              </div>
+              <h3 class="work-title">ヴェネツィア</h3>
+              <p class="work-copy">都市景観としての密度と、水辺の空気感を一枚絵のようにまとめることを意識したシリーズ作品です。</p>
+              <dl class="work-specs">
+                <div class="work-spec"><dt>サイズ</dt><dd>後日掲載</dd></div>
+                <div class="work-spec"><dt>ピース数</dt><dd>後日掲載</dd></div>
+                <div class="work-spec"><dt>公開</dt><dd>作品ページへ</dd></div>
+              </dl>
+            </div>
+          </a>
+        </article>
       </div>
     </section>
 
-    <section class="section section--works" id="works">
-      <div class="layout-content layer-card">
-        <h2 class="section-title">展示室はこちらです。<br/>ご覧あれ！</h2>
+    <section class="section section--archive" data-reveal>
+      <div class="section-heading">
+        <p class="section-eyebrow">Large Works</p>
+        <h2 class="section-title">その他の大型作品</h2>
+        <p class="section-intro">代表作に続く大型作品群を、同じシリーズとして落ち着いて閲覧できる並びにしています。</p>
       </div>
-      <a class="work-card work-card--left" href="https://mamorutanabe.com/QE/">
-        <img class="work-card-image" src="ToMSQE_pic.jpg" srcset="ToMSQE_pic.jpg 1x, ToMSQE_pic@2x.jpg 2x" alt="展示室 1 クイーンエリザベス"/>
-        <span class="work-card-label work-card-label--cyan">展示室 1　クイーンエリザベス</span>
-      </a>
-      <a class="work-card work-card--right" href="https://mamorutanabe.com/Yasaka/">
-        <img class="work-card-image" src="ToYasaka_pic.jpg" srcset="ToYasaka_pic.jpg 1x, ToYasaka_pic@2x.jpg 2x" alt="展示室 2 八坂神社"/>
-        <span class="work-card-label work-card-label--pink">展示室 2　八坂神社</span>
-      </a>
+
+      <div class="works-archive-grid">
+        <article class="work-panel work-panel--compact">
+          <a class="work-panel-link" href="https://mamorutanabe.com/Yasaka/">
+            <div class="work-panel-media">
+              <img class="work-panel-image" src="assets/work-placeholder-wide.svg" alt="八坂神社西楼門の代表写真プレースホルダー"/>
+            </div>
+            <div class="work-panel-body">
+              <div class="work-panel-meta">
+                <span class="work-number">No.03</span>
+              </div>
+              <h3 class="work-title">八坂神社西楼門</h3>
+              <p class="work-copy">建築作品としての骨格や装飾の積み重ねが見どころの大型再現作品です。</p>
+              <dl class="work-specs">
+                <div class="work-spec"><dt>サイズ</dt><dd>後日掲載</dd></div>
+                <div class="work-spec"><dt>ピース数</dt><dd>後日掲載</dd></div>
+              </dl>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-panel work-panel--compact">
+          <a class="work-panel-link" href="#">
+            <div class="work-panel-media">
+              <img class="work-panel-image" src="assets/work-placeholder-wide.svg" alt="ハワイ火山国立公園の代表写真プレースホルダー"/>
+            </div>
+            <div class="work-panel-body">
+              <div class="work-panel-meta">
+                <span class="work-number">No.04</span>
+              </div>
+              <h3 class="work-title">ハワイ火山国立公園</h3>
+              <p class="work-copy">自然地形を主題に、地層や起伏の表情を立体作品として整理した計画作品です。</p>
+              <dl class="work-specs">
+                <div class="work-spec"><dt>サイズ</dt><dd>後日掲載</dd></div>
+                <div class="work-spec"><dt>公開</dt><dd>準備中</dd></div>
+              </dl>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--small" data-reveal>
+      <div class="section-heading">
+        <p class="section-eyebrow">Small Works</p>
+        <h2 class="section-title">小作品</h2>
+        <p class="section-intro">小さな情景や単体作品も、ひとつのシリーズとして見られるようにまとめています。</p>
+      </div>
+
+      <div class="small-works-card">
+        <div class="small-works-header">
+          <span class="work-number">No.05</span>
+          <h3 class="work-title">Small Works Collection</h3>
+        </div>
+        <div class="small-works-grid">
+          <article class="small-work-item">
+            <img class="small-work-image" src="assets/work-placeholder-square.svg" alt="小作品 1 の写真プレースホルダー"/>
+            <h4 class="small-work-title">小作品 A</h4>
+            <p class="small-work-copy">情景・建築・モチーフ作品を差し替えできる枠です。</p>
+          </article>
+          <article class="small-work-item">
+            <img class="small-work-image" src="assets/work-placeholder-square.svg" alt="小作品 2 の写真プレースホルダー"/>
+            <h4 class="small-work-title">小作品 B</h4>
+            <p class="small-work-copy">短いキャプションで雰囲気を伝える想定です。</p>
+          </article>
+          <article class="small-work-item">
+            <img class="small-work-image" src="assets/work-placeholder-square.svg" alt="小作品 3 の写真プレースホルダー"/>
+            <h4 class="small-work-title">小作品 C</h4>
+            <p class="small-work-copy">後からシリーズ単位で並び替えや追加がしやすい構造です。</p>
+          </article>
+          <article class="small-work-item">
+            <img class="small-work-image" src="assets/work-placeholder-square.svg" alt="小作品 4 の写真プレースホルダー"/>
+            <h4 class="small-work-title">小作品 D</h4>
+            <p class="small-work-copy">個別作品ページへの導線にも発展できます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--notes" id="making" data-reveal>
+      <div class="section-heading">
+        <p class="section-eyebrow">Making / Notes</p>
+        <h2 class="section-title">制作記録</h2>
+        <p class="section-intro">作品完成後の展示だけでなく、制作過程や記録の見せ方も今後のアーカイブとして整えていきます。</p>
+      </div>
+
+      <div class="notes-grid">
+        <article class="note-card">
+          <h3 class="note-title">メイキング映像</h3>
+          <p class="note-copy">MS Queen Elizabeth と八坂神社西楼門には、制作記録映像への導線を配置予定です。</p>
+          <a class="text-link" href="#">映像導線を準備中</a>
+        </article>
+        <article class="note-card">
+          <h3 class="note-title">制作メモ</h3>
+          <p class="note-copy">設計時の考え方や展示時の工夫など、作品解説より少し踏み込んだ記録をまとめるための枠です。</p>
+          <a class="text-link" href="#">note連携を準備中</a>
+        </article>
+        <article class="note-card">
+          <h3 class="note-title">展示アーカイブ</h3>
+          <p class="note-copy">展示会や学祭で作品横から見てもらう情報として、来歴や展示記録を整理する想定です。</p>
+          <a class="text-link" href="#">展示記録を追加予定</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--ar3d" id="ar3d" data-reveal>
+      <div class="section-heading">
+        <p class="section-eyebrow">AR / 3D</p>
+        <h2 class="section-title">ARで見る</h2>
+        <p class="section-intro">コロナ禍に始めた、作品を実寸感とともに伝えるための試みです。トップでは簡潔に案内し、独自性として残します。</p>
+      </div>
+
+      <div class="ar-panel">
+        <div class="ar-panel-copy">
+          <p>スマートフォンやタブレットから、作品を空間の中で確認できる導線を用意しています。</p>
+          <p>主役はあくまで作品一覧ですが、会場外でも立体感を共有できる入口として機能させます。</p>
+        </div>
+        <div class="ar-panel-actions">
+          <a class="text-link" href="https://mamorutanabe.com/QE/AR/">QEのARを見る</a>
+          <a class="text-link" href="https://mamorutanabe.com/Yasaka/AR/">八坂のARを見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--about" id="about" data-reveal>
+      <div class="section-heading">
+        <p class="section-eyebrow">About</p>
+        <h2 class="section-title">molについて</h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-body">
+          <p>mol は LEGO<sup>&reg;</sup>を用いた立体作品を制作しています。大型の再現作品から小さな情景作品まで、展示空間での見え方と、写真や画面越しの見え方の両方を意識して構成しています。</p>
+          <p>このトップページは、作品一覧を中心にしたポートフォリオ入口です。知人への紹介、展示横での案内、ビルダー同士の共有、そして時折の相談窓口として機能するよう整理しています。</p>
+        </div>
+        <aside class="about-note">
+          <p class="about-note-label">Contact</p>
+          <p>依頼や相談の導線は今後整備予定です。現時点では作品紹介用のトップページとして設計しています。</p>
+        </aside>
+      </div>
     </section>
   </main>
 
