@@ -1,7 +1,7 @@
 (function() {
   var nav = document.querySelector('.site-nav');
   var heroTitle = document.querySelector('.hero-title');
-  var parallaxItems = Array.prototype.slice.call(document.querySelectorAll('[data-parallax-speed]'));
+  var parallaxItems = Array.prototype.slice.call(document.querySelectorAll('.hero [data-parallax-speed]'));
   var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (!nav || !heroTitle || !('IntersectionObserver' in window)) {
@@ -32,8 +32,8 @@
       var speed = parseFloat(item.getAttribute('data-parallax-speed')) || 0;
       var rect = item.getBoundingClientRect();
       var distanceFromCenter = rect.top + rect.height / 2 - viewportHeight / 2;
-      var offset = distanceFromCenter * speed * -0.3;
-      var limitedOffset = Math.max(Math.min(offset, 84), -84);
+      var offset = distanceFromCenter * speed * -0.12;
+      var limitedOffset = Math.max(Math.min(offset, 24), -24);
       item.style.transform = 'translate3d(0, ' + limitedOffset.toFixed(2) + 'px, 0)';
     });
 
